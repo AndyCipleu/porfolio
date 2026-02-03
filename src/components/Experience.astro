@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  
+{
+    date: "Actualmente...",
+    title: "Desarrollador backend",
+    company: "",
+    description:
+      "Desarrollando aplicaciones backend personales, como aplicacion ecommerce con Java y Spring Boot utilizando microservicios y api de gestión de usuarios y roles con Java y Spring utilizando arquitecura hexagonal.",
+},
+{
+    date: "Mayo 2025",
+    title: "Full stack Developer",
+    company: "Aelis Consulting",
+    description:
+      "Desarrollo y mantenimiento de soluciones robustas para la gestión de residuos y CRM, utilizando Java, Spring Boot, Hibernate, JPA, JavaScript, jQuery, HTML, Bootsrap y CSS. Implementación de funcionalidades backend y frontend, garantizando rendimiento, escalabilidad y facilidad de mantenimiento."
+},
+{
+    date: "Abril 2024",
+    title: "Programador web - Prácticas",
+    company: "Walkiria apps",
+    description:
+      "Desarrollar, editar y mantener páginas web utilizando lenguajes como PHP, javascript, MYSQL y aplicando técnicas SEO para el posicionamento en buscadores.",
+},
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
