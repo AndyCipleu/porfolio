@@ -20,7 +20,7 @@ jobs:
 
       - run: touch .nojekyll  # asegura que GitHub no use Jekyll
 
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
@@ -31,4 +31,4 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - uses: actions/deploy-pages@v1
+      - uses: actions/deploy-pages@v4
